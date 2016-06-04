@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <table class="table">
+            <tr>
+                <th>Caption</th>
+                <th>League</th>
+                <th>Year</th>
+                <th>Current Matchday</th>
+                <th>Number Of Matchdays</th>
+                <th>Number Of Teams</th>
+            </tr>
+            {{#each this}}
+            <tr>
+                <td><a href = "/leagues/{{id}}">{{caption}} </a></td>
+                <th>{{league}}</th>
+                <th>{{year}}</th>
+                <th>{{currentMatchday}}</th>
+                <th>{{numberOfMatchdays}}</th>
+                <th>{{numberOfTeams}}</th>
+            </tr>
+            {{/each}}
+        </table>
+    </body>
+</html>
